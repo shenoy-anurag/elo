@@ -6,13 +6,13 @@ Elo python package to simulate matches between players, and compare their elo ra
 Install using pip:
 
 ```text
-$ pip install leetcode-local-runner
+$ pip install elo-viz
 ```
 
 or with [Poetry](https://python-poetry.org/):
 
 ```text
-$ poetry add leetcode-local-runner
+$ poetry add elo-viz
 ```
 
 # Usage
