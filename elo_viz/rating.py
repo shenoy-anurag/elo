@@ -44,7 +44,7 @@ class Rating:
 
 
 def calculate_expected_score(rating1: Rating, rating2: Rating) -> float:
-    expected_score = 1 / (1 + 10 ** (rating1.value - rating2.value) / 400)
+    expected_score = 1 / (1 + 10 ** ((float(rating2) - float(rating1)) / 400))
     return expected_score
 
 

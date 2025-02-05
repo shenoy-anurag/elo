@@ -11,7 +11,7 @@ class Match:
         self.player2 = player2
         self.winner = None
         self.is_draw = False
-        
+
     def pick_random_winner(self):
         random_number = random.randint(1, 100)
         if random_number <= 33:
@@ -44,3 +44,17 @@ class Match:
 
         self.player1.update_rating(self.player2, result=player1_result)
         self.player2.update_rating(self.player1, result=player2_result)
+
+    def display_result(self):
+        if self.is_draw is True:
+            print(self.player1.name, ' drew with ', self.player2.name)
+        elif self.winner == self.player1.id:
+            print(self.player1.name, ' won against ', self.player2.name)
+        elif self.winner == self.player2.id:
+            print(self.player2.name, ' won against ', self.player1.name)
+
+    def to_dict(self):
+        return {
+            'id': self.id, 'player1': self.player1.to_dict(), 'player2': self.player2.to_dict(),
+            'winner': self.winner, 'is_draw': self.is_draw
+        }
