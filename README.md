@@ -1,4 +1,7 @@
 # Overview
+![PyPI - Version](https://img.shields.io/pypi/v/elo-viz)
+![PyPI - License](https://img.shields.io/pypi/l/elo-viz)
+
 Elo python package to simulate matches between players, and compare their elo ratings after each match, and visualize them. You can use it to simulate rankings of Chess players.
 
 # Installation
